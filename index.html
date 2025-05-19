@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kejutan untuk Kamu ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #d6336c;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .heart {
+      font-size: 50px;
+      animation: heartbeat 1.5s infinite;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">❤️</div>
+  <h1>Hai Sayangku 💕</h1>
+  <p>
+    Aku cuma mau bilang... <br>
+    Terima kasih sudah selalu ada. Kamu adalah segalanya buatku. <br>
+    Ini beberapa kenangan indah kita bersama 🥰
+  </p>
+
+  <div class="gallery">
+    <img src="img/foto1.jpeg" alt="Foto Bersama 1">
+    <img src="img/foto2.jpeg" alt="Foto Bersama 2">
+    <img src="img/foto3.jpeg" alt="Foto Bersama 3">
+    <img src="img/foto4.jpeg" alt="Foto Bersama 4">
+  </div>
+</body>
+</html>
